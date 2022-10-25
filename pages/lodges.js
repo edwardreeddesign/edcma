@@ -6,6 +6,10 @@ import Layout from '../components/Layout';
 const lodges = () => {
   return (
     <Layout title="Lodges">
+      <Title>
+        <h1>The Lodges of Essex County District</h1>
+        <p>(alphabetically by location)</p>
+      </Title>
       <Container>
         {/* <div className="grid"> */}
         {temples.map((temple, idx) => (
@@ -16,7 +20,14 @@ const lodges = () => {
     </Layout>
   );
 };
-
+const Title = styled.div`
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 175%;
+  p {
+    margin-bottom: 2rem;
+  }
+`;
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -24,21 +35,5 @@ const Container = styled.div`
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 2rem;
-
-  /* display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 3rem;
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
-  .grid {
-    grid-column: span 1 / span 1;
-
-    @media (min-width: 1024px) {
-      grid-column: span 8 / span 8;
-    }
-  } */
 `;
 export default lodges;

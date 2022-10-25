@@ -11,6 +11,8 @@ const temples = [
         lodgeImage: '/images/lodges/amherstburg.png',
         mainImage: '',
         ctaImage: '/images/lodges/thistlelodge.png',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'First Tuesday at 8:00 PM except for July and August',
         installation:
           'December 27 (moved to December 28 if the 27th is a Sunday)',
@@ -31,6 +33,8 @@ const temples = [
         image: '/images/lodges/essex.png',
         mainImage: '',
         ctaImage: '/images/lodges/parvaimsqareandcompass.jpeg',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'First Wednesday except for January,July and August',
         installation: 'June',
         website: '',
@@ -50,6 +54,8 @@ const temples = [
         image: '/images/lodges/kingsville.png',
         mainImage: '',
         ctaImage: '/images/navlogo.png',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'First Thursday at 7:30 PM except for July and August',
         installation: 'January',
         website: '',
@@ -69,6 +75,8 @@ const temples = [
         image: '/images/lodges/leamington.png',
         mainImage: '',
         ctaImage: '/images/navlogo.png',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'Third Tuesday at 7:30 PM except for July and August',
         installation: 'June',
         website: '',
@@ -79,6 +87,8 @@ const temples = [
         image: '/images/lodges/leamington.png',
         mainImage: '',
         ctaImage: '/images/navlogo.png',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'Third Thursday at 8:00 PM except for July and August',
         installation: 'June?',
         website: '',
@@ -99,6 +109,8 @@ const temples = [
         image: '/images/lodges/peleeisland.jpeg',
         mainImage: '',
         ctaImage: '/images/navlogo.png',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting:
           'Second Saturday at Noon, May through October on the Island. Second Saturday at Noon April and November at Tilbury. No meetings December through March.',
         installation: 'August',
@@ -119,6 +131,8 @@ const temples = [
         image: '/images/lodges/tilbury.png',
         mainImage: '',
         ctaImage: '/images/navlogo.png',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'Second Tuesday at 8:00 PM except for July and August',
         installation: 'December ',
         website: '',
@@ -141,6 +155,8 @@ const temples = [
         fourthImage: '',
 
         ctaImage: '/images/lodges/greatwesterncta.jpeg',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'First Thursday at 7:30 PM except for July and August',
         installation: 'December',
         website: '',
@@ -182,6 +198,8 @@ const temples = [
         thirdImage: '',
         fourthImage: '',
         ctaImage: '/images/lodges/greatwesterncta.jpeg',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting:
           'First Monday at 7:30 PM except for July and August. If the meeting falls on a holiday Monday, it is moved to Wednesday.',
         installation: 'Saturday following Victoria Day at 1:00 PM',
@@ -195,6 +213,8 @@ const temples = [
         thirdImage: '',
         fourthImage: '',
         ctaImage: '/images/lodges/greatwesterncta.jpeg',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting:
           'First Wednesday of February, April, May, October and December at 11:00 AM',
         installation: 'May',
@@ -208,6 +228,8 @@ const temples = [
         thirdImage: '',
         fourthImage: '',
         ctaImage: '/images/lodges/greatwesterncta.jpeg',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'First Thursday at 7:30 PM except for July and August',
         installation: 'December',
         website: '',
@@ -220,6 +242,8 @@ const temples = [
         thirdImage: '',
         fourthImage: '',
         ctaImage: '/images/lodges/greatwesterncta.jpeg',
+        history:
+          'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
         meeting: 'Second Friday at 7:30 PM except for July and August',
         installation: 'December',
         website: '',
