@@ -8,34 +8,30 @@ const LodgeCard = ({ temple }) => {
   return (
     <Container>
       <Img>
-        <ImgWrapper>
-          <Image
-            src={temple.image}
-            alt="lodge"
-            objectFit="cover"
-            layout="fill"
-          />
-        </ImgWrapper>
+        <div className="overlay"></div>
+        <img src={temple.image} alt={temple.name} />
+        <div className="info">
+          <h4>{temple.address}</h4>
+          <h1>{temple.location}</h1>
+          <p>
+            <span>Parking: </span>
+            {temple.parking}
+          </p>
+        </div>
       </Img>
-      <h2>
-        {temple.location} <hr />
-      </h2>
-      <Info>
-        <h4>{temple.address}</h4>
-        <p>
-          <span>Parking: </span> {temple.parking}
-        </p>
-      </Info>
-      <h3>Our Lodges</h3>
       <Lodges>
-        {temple.lodges.map(lodge => (
-          <Link href={`lodge/${lodge.slug}`} key={lodge.name}>
-            <a className="cta">
-              {lodge.name}
-              <img src={lodge.ctaImage} alt="logo" />
-            </a>
-          </Link>
-        ))}
+        <h3>Our Lodges</h3>
+        <div className="lodges">
+          {temple.lodges.map(lodge => (
+            <div className="cta" key={lodge.name}>
+              <Link href={`/lodge/${lodge.slug}`} key={lodge.name}>
+                <a>
+                  {lodge.name} <img src={lodge.ctaImage} alt={lodge.name} />
+                </a>
+              </Link>
+            </div>
+          ))}
+        </div>
       </Lodges>
     </Container>
   );
@@ -49,33 +45,58 @@ const Container = styled.div`
   margin-bottom: 2rem;
   width: 100%;
   max-width: 30rem;
-  @media (min-width: 1024px) {
-    padding: 2rem /* 32px */;
-  }
 
   h2,
   h3 {
-    text-align: center;
-    margin-bottom: 2.5rem;
+    position: absolute;
+    left: 10%;
   }
 `;
 const Img = styled.div`
   position: relative;
   overflow: hidden;
-  padding-bottom: 20rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-radius: 0.5rem 0.5rem 0 0;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .info {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  h1 {
+    margin: 0.5rem 0;
+  }
 `;
 
 const ImgWrapper = styled.div`
   object-position: top;
   position: absolute;
-  height: 20rem;
+  height: 100%;
   width: 100%;
 `;
 
 const Info = styled.div`
+  position: relative;
   margin: 1.5rem 0;
   padding: 0 1.5rem;
 
@@ -94,26 +115,36 @@ const Info = styled.div`
 `;
 
 const Lodges = styled.div`
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: left;
+  flex-wrap: wrap; */
   width: 100%;
+  padding: 0 2rem;
   gap: 0.5rem;
 
-  .cta {
+  h3 {
+    position: unset;
+    margin-bottom: 1rem;
+  }
+
+  .lodges {
+  }
+
+  a {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    justify-content: center;
+    gap: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
     border: 1.5px solid rgb(251, 233, 47);
     border-radius: 0.25rem;
     background-color: #fff;
     font-size: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     transition: all 300ms ease;
+    margin-bottom: 0.5rem;
 
     &:hover {
       transform: scale(0.95);

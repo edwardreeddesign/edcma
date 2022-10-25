@@ -15,8 +15,8 @@ const Card = ({ temple }) => {
           />
         </div>
         <div className="info">
-          <h2>{temple.location}</h2>
           <h4>{temple.address}</h4>
+          <h2>{temple.location}</h2>
           <p>
             <span>Parking: </span> {temple.parking}
           </p>
@@ -41,14 +41,21 @@ const Card = ({ temple }) => {
 };
 
 const Container = styled.div`
-  .lodge-info {
+  /* .lodge-info {
     display: flex;
+  } */
+
+  .image {
+    position: relative;
   }
 
   img {
-    height: 10rem;
-    width: 10rem;
-    object-fit: cover;
+    position: absolute;
+  }
+
+  .info {
+    position: absolute;
+    left: 10%;
   }
 
   .cta {
