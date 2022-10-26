@@ -13,11 +13,11 @@ const Info = ({ lodge }) => {
         <p>{lodge?.meeting}</p>
       </div>
       <div className="social">
-        <a href={lodge.website} target="_blank" rel="noreferrer">
+        <a href={lodge?.website} target="_blank" rel="noreferrer">
           <button>Website</button>
         </a>
 
-        <a href={lodge.facebook} target="_blank" rel="noreferrer">
+        <a href={lodge?.facebook} target="_blank" rel="noreferrer">
           <button>Facebook</button>
         </a>
       </div>
