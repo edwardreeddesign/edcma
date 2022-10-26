@@ -41,8 +41,8 @@ const Container = styled.div`
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
   border-radius: 0.5rem;
-  padding-bottom: 3rem;
-  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
   width: 100%;
   max-width: 30rem;
 

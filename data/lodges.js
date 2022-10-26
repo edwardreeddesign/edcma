@@ -9,7 +9,7 @@ const temples = [
       {
         name: 'Thistle Lodge 34',
         lodgeImage: '/images/lodges/amherstburg.png',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         ctaImage: '/images/lodges/thistlelodge.png',
         history:
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
@@ -32,7 +32,7 @@ const temples = [
       {
         name: 'Parvaim Central 395',
         image: '/images/lodges/essex.png',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         ctaImage: '/images/lodges/parvaimsqareandcompass.jpeg',
         history:
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
@@ -54,7 +54,7 @@ const temples = [
       {
         name: "St. George's 41",
         image: '/images/lodges/kingsville.png',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         ctaImage: '/images/navlogo.png',
         history:
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
@@ -76,7 +76,7 @@ const temples = [
       {
         name: 'Leamington 290',
         image: '/images/lodges/leamington.png',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         ctaImage: '/images/navlogo.png',
         history:
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
@@ -89,7 +89,7 @@ const temples = [
       {
         name: 'Xenophon 448',
         image: '/images/lodges/leamington.png',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         ctaImage: '/images/navlogo.png',
         history:
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
@@ -112,7 +112,7 @@ const temples = [
       {
         name: 'Pelee 627',
         image: '/images/lodges/peleeisland.jpeg',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         ctaImage: '/images/navlogo.png',
         history:
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
@@ -135,7 +135,7 @@ const temples = [
       {
         name: 'Naphtali 413',
         image: '/images/lodges/tilbury.png',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         ctaImage: '/images/navlogo.png',
         history:
           'orem ipsum dolor sit amet, vidit mandamus moderatius ad sed. Id quod complectitur',
@@ -156,7 +156,7 @@ const temples = [
     lodges: [
       {
         name: 'Great Western 47',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         secondImage: '',
         thirdImage: '',
         fourthImage: '',
@@ -188,7 +188,7 @@ const temples = [
       },
       {
         name: 'Rose Lodge 500',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         secondImage: '',
         thirdImage: '',
         fourthImage: '',
@@ -219,7 +219,7 @@ const temples = [
       },
       {
         name: 'Border Cities 554',
-        mainImage: '',
+        mainImage: '/images/navlogo.png',
         secondImage: '',
         thirdImage: '',
         fourthImage: '',
