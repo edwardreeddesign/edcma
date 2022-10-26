@@ -5,15 +5,23 @@ import Images from '../../components/lodges/Images';
 import Info from '../../components/lodges/Info';
 import temples from '../../data/lodges';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const LodgePage = ({ lodge }) => {
   return (
     <Layout title={lodge?.name}>
+      <Back>
+        <Link href="/lodges">
+          <a>Back to Lodges</a>
+        </Link>
+      </Back>
       <Container>
         <div className="info">
           <Images lodge={lodge} />
         </div>
-        <Info lodge={lodge} />
+        <div>
+          <Info lodge={lodge} />
+        </div>
       </Container>
     </Layout>
   );
@@ -50,12 +58,24 @@ export const getStaticPaths = () => {
   return { paths: paths, fallback: true };
 };
 
+const Back = styled.div`
+  padding: 5rem 2rem 2rem;
+  a {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+`;
+
 const Container = styled.div`
-  display: grid;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  gap: 3rem;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    flex-direction: row;
   }
 
   .info {

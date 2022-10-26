@@ -9,13 +9,13 @@ const Images = ({ lodge }) => {
 };
 
 const Container = styled.div`
-  padding: 1rem 3rem;
+  padding: 1rem 0.5rem;
 
   @media (min-width: 768px) {
     padding: 0;
   }
   img {
-    height: 30rem;
+    height: 640px;
     width: 100%;
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);

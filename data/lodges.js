@@ -175,6 +175,7 @@ const temples = [
           'First Friday at 7:30 PM except for July and August. If first Friday begins a holiday weekend, the meeting is held on the second Friday',
         installation: 'January',
         website: 'https://www.windsorlodge403.com',
+        facebook: 'https://www.facebook.com/groups/944181565592364/',
         slug: 'windsor-lodge',
       },
       {

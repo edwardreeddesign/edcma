@@ -138,11 +138,11 @@ const Lodges = styled.div`
     gap: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    border: 1.5px solid rgb(251, 233, 47);
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
     border-radius: 0.25rem;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.05);
     font-size: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); */
     transition: all 300ms ease;
     margin-bottom: 0.5rem;
 

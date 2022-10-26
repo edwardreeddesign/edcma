@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const Hero = () => {
@@ -17,7 +18,9 @@ const Hero = () => {
         <h2>Grand Lodge of Canada in the Province of Ontario</h2>
       </Title>
       <CTA>
-        <button class="cta-main">Learn More</button>
+        <Link href="/about">
+          <button class="cta-main">Learn More</button>
+        </Link>
       </CTA>
     </StyledHero>
   );
@@ -57,6 +60,7 @@ const CTA = styled.div`
   transform: translate(-50%, -10%);
 
   .cta-main {
+    cursor: pointer;
     padding: 0.85rem 1.25rem;
     border: 1.5px solid rgb(251, 233, 47);
     border-radius: 0.25rem;
