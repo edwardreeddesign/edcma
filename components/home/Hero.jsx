@@ -59,20 +59,20 @@ const CTA = styled.div`
   left: 50%;
   transform: translate(-50%, -10%);
 
-  .cta-main {
+  /* .cta-main {
     cursor: pointer;
     padding: 0.85rem 1.25rem;
-    border: 1.5px solid rgb(251, 233, 47);
-    border-radius: 0.25rem;
-    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
     font-size: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     transition: all 300ms ease;
 
     &:hover {
       transform: scale(0.95);
-      background: rgba(251, 233, 47, 0.9);
+      background: rgba(255, 255, 255, 0.3);
     }
-  }
+  } */
 `;
 export default Hero;

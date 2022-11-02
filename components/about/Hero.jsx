@@ -158,11 +158,6 @@ const Text = styled.div`
     letter-spacing: 0.1rem;
   }
 
-  hr {
-    border: 1px solid rgba(251, 233, 47, 7);
-    margin-top: 0.25rem;
-  }
-
   p {
     line-height: 1.5rem;
     margin-bottom: 2rem;

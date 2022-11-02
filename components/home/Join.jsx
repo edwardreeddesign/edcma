@@ -48,24 +48,6 @@ const Container = styled.div`
   @media (min-width: 992px) {
     padding: 0 20rem;
   }
-
-  button {
-    display: inline-block;
-    margin-bottom: 2rem;
-    width: 100%;
-    padding: 0.85rem 1.25rem;
-    border: 1.5px solid rgb(251, 233, 47);
-    border-radius: 0.25rem;
-    background-color: #fff;
-    font-size: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    transition: all 300ms ease;
-
-    &:hover {
-      transform: scale(0.95);
-      background: rgba(251, 233, 47, 0.9);
-    }
-  }
 `;
 
 const Title = styled.div`
@@ -81,11 +63,6 @@ const Text = styled.div`
   h3 {
     margin: 0 0 1rem 0rem;
     letter-spacing: 0.1rem;
-  }
-
-  hr {
-    border: 1px solid rgba(251, 233, 47, 7);
-    margin-top: 0.25rem;
   }
 
   p {

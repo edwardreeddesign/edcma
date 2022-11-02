@@ -10,7 +10,9 @@ const Layout = ({ title, children }) => {
             ? title + ' - Essex County District Masons}'
             : 'Essex County District Masons'}
         </title>
+
         <meta name="description" content="Essex County District Masons" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />

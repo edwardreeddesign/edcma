@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
@@ -34,12 +35,10 @@ const district = () => {
               <button>View the Lodges</button>
             </a>
           </Link>
-          <Image
-            src="https://ecdma.ca/2022/w3images/mapessex.png"
-            alt="map of Essex District"
-            layout="fill"
-          />
         </Text>
+        <ImageWrapper>
+          <img src="/images/mapessex.png" alt="map of Essex District" />
+        </ImageWrapper>
       </Container>
     </Layout>
   );
@@ -55,6 +54,9 @@ const Container = styled.div`
   }
 
   @media (min-width: 992px) {
+    padding: 0 10rem;
+  }
+  @media (min-width: 1100px) {
     padding: 0 20rem;
   }
 `;
@@ -92,23 +94,14 @@ const Text = styled.div`
     line-height: 1.5rem;
     margin-bottom: 2rem;
   }
+`;
 
-  button {
-    display: inline-block;
-    margin-bottom: 2rem;
-    width: 100%;
-    padding: 0.85rem 1.25rem;
-    border: 1.5px solid rgb(251, 233, 47);
-    border-radius: 0.25rem;
-    background-color: #fff;
-    font-size: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    transition: all 300ms ease;
-
-    &:hover {
-      transform: scale(0.95);
-      background: rgba(251, 233, 47, 0.9);
-    }
-  }
+const ImageWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 90%;
+  overflow: hidden;
 `;
 export default district;
